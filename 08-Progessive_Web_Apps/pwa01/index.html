@@ -7,10 +7,18 @@
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="white"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/function.js"></script>
 </head>
 <body class="fullscreen">
     <div id="container">
         <h1 class="title">Hello World!</h1>
+        <form id="login" method="POST">
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email"><br>
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password"><br>
+            <button type="button" onclick="performsLogin()">Login</button>
+        </form>
     </div>
     <script src="js/main.js"></script>
 </body>
